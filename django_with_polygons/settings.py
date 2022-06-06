@@ -29,6 +29,8 @@ SECRET_KEY = os.getenv("SECRET_KEY", default="django-inse!qv0xcwq6mz7jy)1ag0lknk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", default="True").upper() in ("TRUE", "1", "YES")
 APPEND_SLASH = False
+SECURE_SSL_REDIRECT = True
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", default="*").split(",")
 

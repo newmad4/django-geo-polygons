@@ -15,7 +15,7 @@ class BothHttpAndHttpsSchemaGenerator(OpenAPISchemaGenerator):
         self, request: Optional[Request] = None, public: bool = False
     ) -> openapi.Swagger:
         schema = super().get_schema(request, public)
-        schema.schemes = ["http", "https"]
+        schema.schemes = ["https"]
         return schema
 
 
