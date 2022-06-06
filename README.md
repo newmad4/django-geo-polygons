@@ -1,4 +1,14 @@
-## SRS:
+## Django geo app
+
+
+### General info
+
+This app provides functionality for serve providers and theirs services ares.
+Provide API and Swagger Docs.
+You can find life site [here](https://django-geo-polygons.herokuapp.com/)
+
+
+### SRS:
 Prompt:
 
 As Company_name expands internationally, we have a growing problem that many transportation suppliers we'd like to integrate cannot give us concrete zip codes, cities, etc that they serve.
