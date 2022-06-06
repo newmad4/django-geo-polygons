@@ -1,1 +1,1 @@
-web: gunicorn myproject.wsgi
+web: gunicorn --workers 5 config.wsgi --reload --log-level info
